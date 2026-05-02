@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOOR ATELIER — Break Fashion Rules | Luxury Fashion Dresses</title>
+  <meta name="description" content="Noor Atelier — Bold, fearless, premium luxury fashion dresses. Break the rules of fashion with our futuristic collections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-brand">NOOR ATELIER</div>
+    <div class="loader-bar-container"><div class="loader-bar"></div></div>
+  </div>
+
+  <!-- Fullscreen Image Preview -->
+  <div class="fullscreen-preview" id="fullscreen-preview">
+    <button class="fullscreen-close" aria-label="Close preview">&times;</button>
+    <img src="" alt="Preview" />
+  </div>
+
+  <!-- Floating CTA -->
+  <button class="floating-cta" id="floating-cta">SHOP NOW</button>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">NOOR ATELIER</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#collection">Collections</a></li>
+      <li><a href="#arrivals">New Arrivals</a></li>
+      <li><a href="#runway">Runway</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="music-toggle" id="music-toggle">♫ OFF</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════ HERO SECTION ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-gradient"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-subtitle">Luxury Fashion House — Est. 2024</p>
+      <h1 class="hero-title">NOOR<br>ATELIER</h1>
+      <p class="hero-tagline">BREAK FASHION RULES</p>
+      <a href="#collection" class="hero-cta">Explore Collection</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span><span></span>
+    </div>
+  </section>
+
+  <!-- ═══════ FEATURED COLLECTION ═══════ -->
+  <section class="section" id="collection">
+    <div class="blob blob-3"></div>
+    <div class="section-header reveal">
+      <p class="section-label">Curated For You</p>
+      <h2 class="section-title">FEATURED COLLECTION</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="collection-grid">
+      <!-- Card 1 -->
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="dress1.png" alt="Velvet Eclipse Gown" />
+          <span class="product-badge">New Season</span>
+          <button class="product-quick-view">Quick View</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">VELVET ECLIPSE</h3>
+          <p class="product-price">$2,450 <span class="old-price">$3,200</span></p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="dress2.png" alt="Neon Rose Dress" />
+          <span class="product-badge">Bestseller</span>
+          <button class="product-quick-view">Quick View</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">NEON ROSE</h3>
+          <p class="product-price">$1,890</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="dress3.png" alt="Cyber Veil Dress" />
+          <span class="product-badge">Limited</span>
+          <button class="product-quick-view">Quick View</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">CYBER VEIL</h3>
+          <p class="product-price">$3,100</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="dress4.png" alt="Solar Flare Dress" />
+          <span class="product-badge">Exclusive</span>
+          <button class="product-quick-view">Quick View</button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">SOLAR FLARE</h3>
+          <p class="product-price">$2,780 <span class="old-price">$3,500</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ANTI-GRAVITY SHOWCASE ═══════ -->
+  <section class="section antigravity-section" id="arrivals">
+    <div class="antigravity-overlay">
+      <div class="section-header">
+        <p class="section-label">Interactive Experience</p>
+        <h2 class="section-title">ANTI-GRAVITY SHOWCASE</h2>
+        <div class="section-line"></div>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:12px;letter-spacing:2px;">DRAG &amp; THROW THE ELEMENTS</p>
+      </div>
+    </div>
+
+    <!-- Floating physics elements -->
+    <div class="ag-element" style="width:160px;height:200px;" data-x="80" data-y="200">
+      <img src="dress1.png" alt="Floating dress" />
+    </div>
+    <div class="ag-element" style="width:140px;height:180px;" data-x="350" data-y="150">
+      <img src="dress2.png" alt="Floating dress" />
+    </div>
+    <div class="ag-element" style="width:150px;height:190px;" data-x="600" data-y="250">
+      <img src="dress3.png" alt="Floating dress" />
+    </div>
+    <div class="ag-element" style="width:130px;height:170px;" data-x="900" data-y="180">
+      <img src="dress4.png" alt="Floating dress" />
+    </div>
+    <div class="ag-element" data-x="200" data-y="450">
+      <div class="ag-text-block">BREAK THE RULES</div>
+    </div>
+    <div class="ag-element" data-x="500" data-y="500">
+      <div class="ag-text-block">NOOR ATELIER</div>
+    </div>
+    <div class="ag-element" data-x="750" data-y="420">
+      <div class="ag-tag pink">NEW DROP</div>
+    </div>
+    <div class="ag-element" data-x="150" data-y="350">
+      <div class="ag-tag purple">FEARLESS</div>
+    </div>
+    <div class="ag-element" data-x="450" data-y="380">
+      <div class="ag-tag orange">SS 2025</div>
+    </div>
+    <div class="ag-element" data-x="850" data-y="350">
+      <div class="ag-tag green">BOLD</div>
+    </div>
+    <div class="ag-element" style="width:120px;height:160px;" data-x="1050" data-y="280">
+      <img src="dress1.png" alt="Floating dress" />
+    </div>
+    <div class="ag-element" data-x="680" data-y="480">
+      <div class="ag-text-block" style="font-size:0.9rem;">LUXURY REDEFINED</div>
+    </div>
+  </section>
+
+  <!-- ═══════ FASHION LOOKBOOK ═══════ -->
+  <section class="section lookbook-section" id="lookbook">
+    <div class="section-header reveal">
+      <p class="section-label">Visual Stories</p>
+      <h2 class="section-title">LOOKBOOK</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="lookbook-track">
+      <div class="lookbook-card reveal">
+        <img src="lookbook1.png" alt="Runway Collection" />
+        <div class="lookbook-card-overlay">
+          <h3>RUNWAY NIGHT</h3>
+          <p>Fall/Winter 2025 Collection</p>
+        </div>
+      </div>
+      <div class="lookbook-card reveal">
+        <img src="lookbook2.png" alt="Editorial Shoot" />
+        <div class="lookbook-card-overlay">
+          <h3>NEON DREAMS</h3>
+          <p>Editorial Campaign</p>
+        </div>
+      </div>
+      <div class="lookbook-card reveal">
+        <img src="dress1.png" alt="Velvet Eclipse" />
+        <div class="lookbook-card-overlay">
+          <h3>VELVET ECLIPSE</h3>
+          <p>Signature Piece</p>
+        </div>
+      </div>
+      <div class="lookbook-card reveal">
+        <img src="dress4.png" alt="Solar Flare" />
+        <div class="lookbook-card-overlay">
+          <h3>SOLAR FLARE</h3>
+          <p>Street Luxury Series</p>
+        </div>
+      </div>
+      <div class="lookbook-card reveal">
+        <img src="lookbook1.png" alt="Backstage" />
+        <div class="lookbook-card-overlay">
+          <h3>BACKSTAGE</h3>
+          <p>Behind The Scenes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ RUNWAY SLIDER ═══════ -->
+  <section class="section runway-section" id="runway">
+    <div class="section-header reveal">
+      <p class="section-label">On The Runway</p>
+      <h2 class="section-title">FASHION RUNWAY</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="runway-slider reveal">
+      <div class="runway-slide active">
+        <img src="lookbook1.png" alt="Runway Show" />
+        <div class="runway-slide-overlay">
+          <h3>FALL/WINTER 2025</h3>
+        </div>
+      </div>
+      <div class="runway-slide">
+        <img src="lookbook2.png" alt="Editorial" />
+        <div class="runway-slide-overlay">
+          <h3>NEON NIGHTS COLLECTION</h3>
+        </div>
+      </div>
+      <div class="runway-slide">
+        <img src="dress2.png" alt="Neon Rose" />
+        <div class="runway-slide-overlay">
+          <h3>NEON ROSE — SIGNATURE</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ STATS ═══════ -->
+  <section class="section stats-section" id="about">
+    <div class="stats-grid reveal">
+      <div class="stat-item">
+        <h3 data-count="48" data-suffix="+">0</h3>
+        <p>Countries</p>
+      </div>
+      <div class="stat-item">
+        <h3 data-count="250" data-suffix="K+">0</h3>
+        <p>Clients Worldwide</p>
+      </div>
+      <div class="stat-item">
+        <h3 data-count="12" data-suffix="">0</h3>
+        <p>Fashion Awards</p>
+      </div>
+      <div class="stat-item">
+        <h3 data-count="500" data-suffix="+">0</h3>
+        <p>Exclusive Designs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIALS ═══════ -->
+  <section class="section" id="testimonials">
+    <div class="section-header reveal">
+      <p class="section-label">What They Say</p>
+      <h2 class="section-title">CLIENT VOICES</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Noor Atelier dresses make me feel like I own the room. Absolute luxury with an edge."</p>
+        <span class="reviewer">— Aria Chen, NYC</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"The craftsmanship is insane. Every stitch screams premium. Nothing else compares."</p>
+        <span class="reviewer">— Mia Laurent, Paris</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I wore Noor Atelier to the Met Gala and everyone stopped to ask. Pure fire."</p>
+        <span class="reviewer">— Zara Knight, London</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fearless fashion for fearless women. Noor Atelier is not a brand — it's a movement."</p>
+        <span class="reviewer">— Luna Park, Seoul</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"The anti-gravity collection literally broke the internet. Revolutionary design."</p>
+        <span class="reviewer">— Sofia Reyes, Milan</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>NOOR ATELIER</h2>
+        <p>Bold. Fearless. Premium. Breaking fashion rules since 2024. Luxury dresses for those who dare to stand out.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TK</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="Pinterest">PI</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#">New Arrivals</a>
+        <a href="#">Dresses</a>
+        <a href="#">Runway Pieces</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sale</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Sustainability</a>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-bottom:8px;">Get early access to drops & exclusive offers.</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="your@email.com" aria-label="Email for newsletter" />
+          <button type="button">JOIN</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NOOR ATELIER. ALL RIGHTS RESERVED. BREAK THE RULES.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
